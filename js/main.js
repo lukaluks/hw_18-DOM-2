@@ -59,28 +59,10 @@ const markup = images
   )
   .join("");
 
-gallery.insertAdjacentHTML("beforeend", markup);
-
 
 let counterValue = 0;
 
 const valueEl = document.getElementById("value");
 const decrementBtn = document.getElementById("decrement");
 const incrementBtn = document.getElementById("increment");
-
-function updateCounter() {
-    valueEl.textContent = counterValue;
-}
-
-decrementBtn.onclick = function() {
-    counterValue -= 1;
-    updateCounter();
-};
-
-incrementBtn.onclick = function() {
-    counterValue += 1;
-    updateCounter();
-};
-
-updateCounter();
 
